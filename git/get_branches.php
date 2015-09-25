@@ -1,3 +1,9 @@
+/**
+ * functions to get git branches and echo with json format
+ *
+ * @author     Zackexplosion <cstony0917@gmail.com>
+ */
+
 function get_branches(){
 	// branches, bs
 	$bs = shell_exec('git branch');
