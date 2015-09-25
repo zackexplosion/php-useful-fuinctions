@@ -3,7 +3,6 @@
  *
  * @author     Zackexplosion <cstony0917@gmail.com>
  */
-
 function get_branches(){
 	// branches, bs
 	$bs = shell_exec('git branch');
@@ -27,6 +26,9 @@ function get_branches(){
 				$exploded = explode('/', $b);
 				$key = $exploded[0];
 				$o[$key][] = $exploded[1];
+			}
+			else{
+				$o[$b] = $b;
 			}
 		}
 	}
